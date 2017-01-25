@@ -1,0 +1,21 @@
+/* Divs */
+.search-bar { display:block;float:left;}
+.search-result { display:block;float:left;}
+
+
+/* Span & input inside the SEARCH-BAR Div*/
+.span-date { display:block;float:left; margin: 5px;}
+.input-begin-date {}
+.input-end-date {}
+.span-thematic { display:block;float:left;}
+.input-monitoring-list { display:block;float:left;}
+.span-monitoring { display:block;float:left;}
+.span-support { display:block;float:left;}
+.span-search { display:block;float:left;}
+.input-support-list {}
+.checkbox-media-type { display:block;float:left;}
+.input-fulltext-search {}
+.action-list { display:block;float:left; }
+.search-actions {}
+
+

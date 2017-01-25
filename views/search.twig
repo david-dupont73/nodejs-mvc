@@ -1,0 +1,67 @@
+{% extends 'layout.twig' %}
+
+
+{% block head %}
+    {{parent()}}
+    <link rel="stylesheet" href="stylesheets/search.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="search-bar" class="search-bar">
+        <!-- Field begin date -->
+        <span class="span-date">
+            Date début:
+            <input id="input-end-date" type="date" class="input-begin-date">
+        </span>
+
+        <!-- Field end date -->
+        <span class="span-date">
+            Date fin:
+            <input id="input-end-date" type="date" class="input-end-date">
+        </span>
+
+        <!-- Field thematic -->
+        <span class="span-thematic">
+            Thématique:
+            <input id="input-thematic-list" type="text" id="thematic" class="input-thematic-list">
+        </span>
+
+        <!-- Field monitoring -->
+        <span class="span-monitoring">
+            Dossier:
+            <input id="input-monitoring-list" type="text" id="monitoring" class="input-monitoring-list">
+        </span>
+
+        <!-- Field media type (Print, web, broadcast,etc..) -->
+        <span class="span-support">
+            <label for="checkbox-print-1">Presse:</label><input id="checkbox-print-1" type="checkbox" class="checkbox-media-type">
+            <label for="checkbox-broadcast-2">Presse:</label><input id="checkbox-broadcast-2" type="checkbox" class="checkbox-media-type">
+            <label for="checkbox-web-3">Presse:</label><input id="checkbox-web-3" type="checkbox" class="checkbox-media-type">
+            <label for="checkbox-socialmedia-4">Presse:</label><input id="checkbox-socialmedia-4" type="checkbox" class="checkbox-media-type">
+        </span>
+
+        <!-- Field support -->
+        <span class="span-support">
+            Support:
+            <input id="input-support-list" type="text" id="thematic" class="input-support-list">
+        </span>
+
+        <!-- Field search -->
+        <span class="span-search">
+            Recherche:
+            <input id="input-fulltext-search" type="text" class="input-fulltext-search">
+        </span>
+
+        <div id="action-list" class="action-list">
+            <input id="button-inverte" type="button" name="Inverser" class="search-actions"/>
+            <input id="button-clear" type="button" name="Effacer" class="search-actions"/>
+            <input id="button-search" type="button" name="Rechercher" class="search-actions"/>
+        </div>
+    </div>
+    <div id="search-result" class="search-result ">
+
+
+    </div>
+
+{% endblock %}
