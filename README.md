@@ -28,6 +28,9 @@ The MVC directoires:
 ├── bin
 │   └── www
 ├── package.json
+├── Locales
+│   ├── en.json
+│   └── fr.json
 ├── Models
 │   ├── db.js
 │   ├── document.js
@@ -46,6 +49,31 @@ The MVC directoires:
     ├── layout.twig
     ├── search.twig
     └── error.twig
+  
+  
+  Data Model management:
+  
+  I use Tim Robinson Data model specification to build the Data model 
+  Read this article http://timjrobinson.com/how-to-structure-your-nodejs-models-2/ for more information.
+  
+  In the mvc directory, data model file are stored in /Models folder.
+  
+  Multilanguage management
+  
+  localization file are stored into the /locales folder. It's a JSON File using a specific naming convention.
+  for english: en.json
+  for french:  fr.json
+  
+  Read the following article for more information about i18n convention and usage:
+  https://www.npmjs.com/package/i18n
+  
+  Database storage & FullText search
+  
+  here, I use sqlite3 plugIn to store my information. 
+  For a fulltext search usage, SQLITE now introduce FTS feature.
+  See https://www.sqlite.org/fts3.html for more information about this Extension.
+  
+  
   
   
   
